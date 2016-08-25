@@ -3,7 +3,7 @@ class CharacterClasses
   # Returns a regex that matches a string that has at least three characters, like
   # "abc" or "a12" or "a b" (the middle character is a space).
   def matching_at_least_three_characters
-    /WRITE ME/
+    /[\w ]{3,}/
   end
 
   # Returns a regex that matches a telephone number with dashes.
@@ -16,14 +16,14 @@ class CharacterClasses
   #   * "650 123 1234"
   #   * "650 123 12"
   def matching_telephone_number
-    /WRITE ME/
+    /\w{3}-\w{3}-\w{3}/
   end
 
   # Returns a regex that matches any string with two single-digit numbers in it.
   #
   # Examples: "23", "a 2 b 4".
   def matching_two_numbers
-    /WRITE ME/
+    /(.*\d){2}/
   end
 
   # Returns a regex that matches a string that has at least one character that
@@ -38,6 +38,6 @@ class CharacterClasses
   #   * "james"
   #   * "abc"
   def matching_not_lowercase
-    /WRITE ME/
+    /(.*[A-Z])/
   end
 end
