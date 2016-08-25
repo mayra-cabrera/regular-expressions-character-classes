@@ -1,7 +1,7 @@
 class Names
   # Returns a regex matching a capitalized first name, like "James" or "Jessie".
   def matching_first_name
-    /WRITE ME/
+    /^[A-Z]\w+/
   end
 
   # Returns a regex matching two capitalized names, separated by some amount of whitespace.
@@ -15,6 +15,6 @@ class Names
   #   * "JamesBond"
   #   * "james bond"
   def matching_first_name_last_name
-    /WRITE ME/
+    /[A-Z]\w+\s+[A-Z]\w+/
   end
 end

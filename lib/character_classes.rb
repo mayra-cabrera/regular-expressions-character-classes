@@ -38,6 +38,6 @@ class CharacterClasses
   #   * "james"
   #   * "abc"
   def matching_not_lowercase
-    /(.*[A-Z])/
+    /[^a-z]/
   end
 end
